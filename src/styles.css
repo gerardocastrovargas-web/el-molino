@@ -29,7 +29,7 @@ body {
   .font-display { font-family: 'Playfair Display', Georgia, serif; }
 
   .nav-link {
-    @apply relative text-[13px] font-semibold text-white/84 transition-colors hover:text-white;
+    @apply relative text-[13px] font-semibold text-white/85 transition-colors hover:text-white;
   }
   .nav-link::after {
     content: '';
@@ -50,7 +50,7 @@ body {
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-white/55 bg-black/10 px-6 py-4 text-sm font-bold text-white backdrop-blur-sm transition duration-300 hover:border-white hover:bg-white/10;
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-white/50 bg-black/10 px-6 py-4 text-sm font-bold text-white backdrop-blur-sm transition duration-300 hover:border-white hover:bg-white/10;
   }
 
   .carousel-btn {
@@ -70,11 +70,11 @@ body {
 
   .product-card {
     flex: 0 0 calc(100% - 18px);
-    @apply flex snap-start flex-col overflow-hidden rounded-lg border border-black/8 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_65px_rgba(20,12,8,.16)];
+    @apply flex snap-start flex-col overflow-hidden rounded-lg border border-black/10 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_65px_rgba(20,12,8,.16)];
   }
 
   .contact-link {
-    @apply flex items-start gap-3 text-white/76 transition-colors hover:text-white;
+    @apply flex items-start gap-3 text-white/75 transition-colors hover:text-white;
   }
   .contact-link svg { @apply mt-0.5 shrink-0 text-[#D5A35E]; }
   .contact-link span { @apply flex flex-col; }
@@ -82,7 +82,7 @@ body {
   .contact-link small { @apply mt-0.5 text-[11px] text-white/40; }
 
   .form-field {
-    @apply w-full rounded-md border border-white/15 bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20;
+    @apply w-full rounded-md border border-white/15 bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/30 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20;
   }
 
   .social-link {
