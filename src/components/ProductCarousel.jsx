@@ -25,10 +25,6 @@ export default function ProductCarousel() {
             <p className="max-w-md text-sm leading-6 text-black/55">
               Una selección de embutidos artesanales, elaborados con ingredientes naturales y recetas únicas, inspiradas en la tradición.
             </p>
-            <div className="hidden shrink-0 gap-2 sm:flex">
-              <button className="carousel-btn" onClick={() => scroll(-1)} aria-label="Producto anterior"><ChevronLeft size={20} /></button>
-              <button className="carousel-btn carousel-btn--accent" onClick={() => scroll(1)} aria-label="Producto siguiente"><ChevronRight size={20} /></button>
-            </div>
           </div>
         </div>
 
