@@ -22,10 +22,12 @@ export default function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/72 backdrop-blur-xl border-b border-white/10 shadow-lg' : 'bg-black/30 backdrop-blur-[2px]'}`}>
       <div className="mx-auto flex h-[76px] max-w-[1240px] items-center justify-between px-5 lg:px-8">
-        <a href="#inicio" className="flex items-center" aria-label="Ir al inicio">
-          <span className="flex h-[58px] w-[148px] items-center justify-center bg-brand-500 px-3 shadow-[0_8px_32px_rgba(193,18,31,.3)]">
-            <img src="/assets/logo.png" alt="El Molino" className="h-auto w-full object-contain" />
-          </span>
+        <a href="#inicio" aria-label="Ir al inicio">
+          <img
+            src="/assets/logo.png"
+            alt="El Molino"
+            className="h-[52px] w-[140px] rounded-md object-cover shadow-[0_8px_32px_rgba(193,18,31,.35)] transition-opacity hover:opacity-90"
+          />
         </a>
 
         <nav className="hidden items-center gap-10 md:flex" aria-label="Navegación principal">

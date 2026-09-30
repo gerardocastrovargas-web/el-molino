@@ -135,9 +135,11 @@ export default function ContactFooter() {
           {/* Logo + tagline */}
           <div className="flex items-center gap-4">
             <a href="#inicio" aria-label="Ir al inicio">
-              <span className="flex h-[52px] w-[130px] items-center justify-center bg-brand-500 px-3 shadow-[0_6px_24px_rgba(193,18,31,.25)]">
-                <img src="/assets/logo.png" alt="El Molino" className="h-auto w-full object-contain brightness-0 invert" />
-              </span>
+              <img
+                src="/assets/logo.png"
+                alt="El Molino"
+                className="h-[46px] w-[124px] rounded-md object-cover shadow-[0_6px_24px_rgba(193,18,31,.25)] transition-opacity hover:opacity-90"
+              />
             </a>
             <span className="hidden h-7 w-px bg-white/12 sm:block" />
             <p className="text-xs text-white/40">Sabor artesanal desde 2012.</p>
