@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone, Send } from 'lucide-react'
+import { Mail, MapPin, MessageCircle, Phone, Send } from 'lucide-react'
 
 export default function ContactFooter() {
   const handleSubmit = (event) => {
@@ -128,42 +128,6 @@ export default function ContactFooter() {
         </div>
       </div>
 
-      {/* ── Footer bar ──────────────────────────────────────────────── */}
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1240px] flex-col gap-6 px-5 py-7 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-
-          {/* Logo + tagline */}
-          <div className="flex items-center gap-4">
-            <a href="#inicio" aria-label="Ir al inicio">
-              <img
-                src="/assets/logo.png"
-                alt="El Molino"
-                className="h-[46px] w-[124px] rounded-md object-cover shadow-[0_6px_24px_rgba(193,18,31,.25)] transition-opacity hover:opacity-90"
-              />
-            </a>
-            <span className="hidden h-7 w-px bg-white/12 sm:block" />
-            <p className="text-xs text-white/40">Sabor artesanal desde 2012.</p>
-          </div>
-
-          {/* Nav links */}
-          <nav className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-semibold text-white/55" aria-label="Footer navigation">
-            <a href="#productos" className="hover:text-white transition-colors">Productos</a>
-            <a href="#historia"  className="hover:text-white transition-colors">Historia</a>
-            <a href="#faq"       className="hover:text-white transition-colors">FAQ</a>
-            <a href="#contacto"  className="hover:text-white transition-colors">Contacto</a>
-          </nav>
-
-          {/* Social */}
-          <div className="flex items-center gap-3">
-            <a href="#" className="social-link" aria-label="Instagram"><Instagram size={17} /></a>
-            <a href="#" className="social-link" aria-label="Facebook"><Facebook size={17} /></a>
-          </div>
-        </div>
-
-        <div className="border-t border-white/8 py-4 text-center text-[11px] text-white/35">
-          © 2026 El Molino. Todos los derechos reservados. · Hecho con pasión en Mexicali, B.C.
-        </div>
-      </div>
     </footer>
   )
 }
