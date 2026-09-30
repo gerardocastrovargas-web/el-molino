@@ -10,7 +10,7 @@ const features = [
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative isolate min-h-[760px] overflow-hidden bg-black pt-[76px] lg:min-h-[860px]">
+    <section id="inicio" className="relative isolate flex h-[100dvh] min-h-[580px] flex-col overflow-hidden bg-black pt-[76px]">
       {/* Background image */}
       <div className="absolute inset-0 -z-20">
         <img
@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 -z-10 h-32 bg-gradient-to-t from-black/70 to-transparent" />
 
       {/* Main content */}
-      <div className="mx-auto flex min-h-[680px] max-w-[1240px] items-center px-5 py-16 lg:px-8 lg:py-24">
+      <div className="mx-auto flex flex-1 max-w-[1240px] items-center px-5 py-10 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
