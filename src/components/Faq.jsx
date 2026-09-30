@@ -4,7 +4,7 @@ import { Plus } from 'lucide-react'
 import { faqs } from '../data/faqs'
 
 export default function Faq() {
-  const [open, setOpen] = useState(0)
+  const [open, setOpen] = useState(null)
 
   return (
     <section id="faq" className="bg-cream py-20 sm:py-24">
