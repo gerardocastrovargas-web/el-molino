@@ -1,0 +1,51 @@
+export const products = [
+  {
+    name: 'Bratwurst',
+    style: 'Estilo alemán',
+    image: '/assets/products/bratwurst.jpg',
+    description: 'Salchicha tradicional alemana, suave, especiada y perfecta para el asador.',
+    notes: ['Ideal para asar o en sartén', 'Perfecta con cerveza artesanal'],
+  },
+  {
+    name: 'Frankfurter',
+    style: 'Estilo alemán',
+    image: '/assets/products/frankfurter.jpg',
+    description: 'Clásica salchicha tipo Viena, jugosa y de textura delicada.',
+    notes: ['Ideal para hot dogs gourmet', 'Excelente hervida o a la parrilla'],
+  },
+  {
+    name: 'Chorizo Ranchero',
+    style: 'Estilo mexicano',
+    image: '/assets/products/chorizo-ranchero.jpg',
+    description: 'Sabor profundo, especias tradicionales y una textura carnosa excepcional.',
+    notes: ['Perfecto para tacos y asados', 'Sabor intenso y especiado'],
+  },
+  {
+    name: 'Breakfast',
+    style: 'Estilo inglés',
+    image: '/assets/products/breakfast.jpg',
+    description: 'Salchicha para desayuno, aromática y con una mezcla de especias delicada.',
+    notes: ['Ideal con huevos', 'Perfecta para brunch'],
+  },
+  {
+    name: 'Red Spicy',
+    style: 'Ahumada / picante',
+    image: '/assets/products/red-spicy.jpg',
+    description: 'Ahumada, intensa y con un picante equilibrado para los que buscan carácter.',
+    notes: ['Ideal para parrilladas', 'Perfecta con cerveza IPA'],
+  },
+  {
+    name: 'Salami',
+    style: 'Ahumado',
+    image: '/assets/products/salami.jpg',
+    description: 'Salami artesanal de perfil profundo, ideal para tablas y momentos especiales.',
+    notes: ['Ideal con quesos', 'Gran compañero de vino tinto'],
+  },
+  {
+    name: 'Chistorra Española',
+    style: 'Con vino blanco',
+    image: '/assets/products/chistorra.jpg',
+    description: 'Jugosa, aromática y elaborada con especias que recuerdan a la cocina española.',
+    notes: ['Perfecta para tapas', 'Excelente para parrilladas'],
+  },
+]

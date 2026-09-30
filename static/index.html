@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <title>El Molino | Embutidos Artesanales</title>
+  <meta name="description" content="El Molino — embutidos artesanales con tradición alemana, elaborados en Mexicali desde 2012." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a class="logo-box" href="#inicio"><img src="assets/logo.png" alt="El Molino"></a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#productos">Productos</a><a href="#historia">Historia</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu"><a href="#productos">Productos</a><a href="#historia">Historia</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero__overlay"></div>
+  <div class="container hero__content reveal">
+    <span class="eyebrow gold">Embutidos artesanales</span>
+    <h1>Auténticos embutidos artesanales con tradición alemana</h1>
+    <div class="red-line"></div>
+    <p>Desde 2012, en Mexicali, elaboramos embutidos gourmet con carne 100% real, ingredientes de calidad y recetas tradicionales.</p>
+    <div class="hero__actions"><a class="btn btn--red" href="#productos">Nuestros Productos →</a><a class="btn btn--outline" href="https://wa.me/526864280637" target="_blank" rel="noreferrer">🛒 Hacer Pedido</a></div>
+  </div>
+  <div class="hero__values">
+    <div class="container value-grid">
+      <div class="value"><span>◉</span><div><strong>100% Carne real</strong><small>Ingredientes seleccionados</small></div></div>
+      <div class="value"><span>◌</span><div><strong>Recetas tradicionales</strong><small>Inspiración alemana</small></div></div>
+      <div class="value"><span>◇</span><div><strong>Calidad artesanal</strong><small>Hecho con cuidado</small></div></div>
+      <div class="value"><span>⌖</span><div><strong>Hecho en Mexicali, B.C.</strong><small>Desde 2012</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="products section" id="productos">
+  <div class="container">
+    <div class="products__head">
+      <div><span class="eyebrow red">Nuestros productos</span><h2>Sabores que cuentan historias</h2></div>
+      <div class="products__meta"><p>Una selección de embutidos artesanales, elaborados con ingredientes naturales y recetas únicas, inspiradas en la tradición.</p><div class="top-arrows"><button data-dir="-1">←</button><button class="accent" data-dir="1">→</button></div></div>
+    </div>
+    <div class="carousel-wrap">
+      <button class="side-arrow side-arrow--left" data-dir="-1">‹</button>
+      <div class="carousel" id="carousel">
+        <article class="card"><div class="card__image"><img src="assets/products/bratwurst.jpg" alt="Bratwurst"><b>ESTILO ALEMÁN</b></div><div class="card__body"><h3>Bratwurst</h3><p>Salchicha tradicional alemana, suave, especiada y perfecta para el asador.</p><div class="notes"><span>🔥 Ideal para asar o en sartén</span><span>🍺 Perfecta con cerveza artesanal</span></div><button>Ver detalles</button></div></article>
+        <article class="card"><div class="card__image"><img src="assets/products/frankfurter.jpg" alt="Frankfurter"><b>ESTILO ALEMÁN</b></div><div class="card__body"><h3>Frankfurter</h3><p>Clásica salchicha tipo Viena, jugosa y de textura delicada.</p><div class="notes"><span>🌭 Ideal para hot dogs gourmet</span><span>♨ Excelente hervida o a la parrilla</span></div><button>Ver detalles</button></div></article>
+        <article class="card"><div class="card__image"><img src="assets/products/chorizo-ranchero.jpg" alt="Chorizo Ranchero"><b>ESTILO MEXICANO</b></div><div class="card__body"><h3>Chorizo Ranchero</h3><p>Sabor profundo, especias tradicionales y una textura carnosa excepcional.</p><div class="notes"><span>🌶 Sabor intenso y especiado</span><span>🔥 Perfecto para tacos y asados</span></div><button>Ver detalles</button></div></article>
+        <article class="card"><div class="card__image"><img src="assets/products/breakfast.jpg" alt="Breakfast"><b>ESTILO INGLÉS</b></div><div class="card__body"><h3>Breakfast</h3><p>Salchicha para desayuno, aromática y con una mezcla de especias delicada.</p><div class="notes"><span>🍳 Ideal con huevos</span><span>🥐 Perfecta para brunch</span></div><button>Ver detalles</button></div></article>
+        <article class="card"><div class="card__image"><img src="assets/products/red-spicy.jpg" alt="Red Spicy"><b>AHUMADA / PICANTE</b></div><div class="card__body"><h3>Red Spicy</h3><p>Ahumada, intensa y con un picante equilibrado para los que buscan carácter.</p><div class="notes"><span>🔥 Ideal para parrilladas</span><span>🍺 Perfecta con cerveza IPA</span></div><button>Ver detalles</button></div></article>
+        <article class="card"><div class="card__image"><img src="assets/products/salami.jpg" alt="Salami"><b>AHUMADO</b></div><div class="card__body"><h3>Salami</h3><p>Salami artesanal de perfil profundo, ideal para tablas y momentos especiales.</p><div class="notes"><span>🧀 Ideal con quesos</span><span>🍷 Gran compañero de vino tinto</span></div><button>Ver detalles</button></div></article>
+        <article class="card"><div class="card__image"><img src="assets/products/chistorra.jpg" alt="Chistorra Española"><b>CON VINO BLANCO</b></div><div class="card__body"><h3>Chistorra Española</h3><p>Jugosa, aromática y elaborada con especias que recuerdan a la cocina española.</p><div class="notes"><span>🥘 Perfecta para tapas</span><span>🔥 Excelente para parrilladas</span></div><button>Ver detalles</button></div></article>
+      </div>
+      <button class="side-arrow side-arrow--right" data-dir="1">›</button>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="historia">
+  <div class="story__image"><img src="assets/products/salami.jpg" alt="Proceso artesanal"></div>
+  <div class="story__content">
+    <div class="story__copy reveal"><span class="eyebrow red">Nuestra historia</span><h2>Tradición que sabe mejor</h2><p>En El Molino llevamos desde 2012 elaborando embutidos artesanales en Mexicali, inspirados en la tradición alemana y en el auténtico sabor de la buena mesa.</p><p>Utilizamos carne real, especias seleccionadas y recetas perfeccionadas con el tiempo para ofrecer productos hechos con pasión, consistencia y respeto por el oficio.</p><a class="btn btn--red" href="#contacto">Conoce más sobre nosotros →</a></div>
+    <div class="story__benefits" id="benefits"><div><span>◉</span>Carnes seleccionadas</div><div><span>◌</span>Ingredientes naturales</div><div><span>⌘</span>Recetas alemanas y mexicanas</div><div><span>✦</span>Más de 10 años de experiencia</div></div>
+  </div>
+</section>
+
+<section class="faq section" id="faq"><div class="container"><div class="faq__head"><div><span class="eyebrow red">Preguntas frecuentes</span><h2>Te ayudamos a elegir</h2></div><p>Aquí respondemos las dudas más comunes sobre nuestros productos, pedidos, envíos y más. Si no encuentras tu respuesta, contáctanos.</p></div><div class="faq-grid" id="faqGrid">
+  <div class="faq-item open"><button>¿Hacen envíos a domicilio?<i>+</i></button><div class="faq-answer"><p>Sí. La disponibilidad, cobertura y costo se confirman al momento de hacer tu pedido. Para pedidos fuera de Mexicali contáctanos para revisar opciones de envío.</p></div></div>
+  <div class="faq-item"><button>¿Puedo comprar al mayoreo?<i>+</i></button><div class="faq-answer"><p>Sí. Atendemos restaurantes, comercios, eventos y compras de volumen. Escríbenos para recibir información de presentaciones y condiciones comerciales.</p></div></div>
+  <div class="faq-item"><button>¿Cómo debo conservar los productos?<i>+</i></button><div class="faq-answer"><p>Mantén los productos refrigerados o congelados según las indicaciones del empaque y evita romper la cadena de frío.</p></div></div>
+  <div class="faq-item"><button>¿Tienen punto de venta físico?<i>+</i></button><div class="faq-answer"><p>Estamos en Mexicali, Baja California. Contáctanos antes de visitarnos para confirmar disponibilidad y horario.</p></div></div>
+  <div class="faq-item"><button>¿Qué ingredientes utilizan?<i>+</i></button><div class="faq-answer"><p>Trabajamos con carne real, especias y recetas artesanales. Cada producto puede tener una formulación distinta; revisa su etiqueta si tienes restricciones alimentarias.</p></div></div>
+  <div class="faq-item"><button>¿Cómo hago un pedido?<i>+</i></button><div class="faq-answer"><p>Puedes iniciar tu pedido por WhatsApp o mediante el formulario. Te confirmaremos disponibilidad, total y forma de entrega.</p></div></div>
+</div></div></section>
+
+<footer class="contact" id="contacto"><div class="contact__photo"><img src="assets/products/chistorra.jpg" alt="Embutidos El Molino"><em>“Buenos embutidos,<br>mejores momentos”</em></div><div class="container contact__grid"><div><span class="eyebrow red">Contáctanos</span><h2>Hablemos de buenos sabores</h2><p>Haz tu pedido, resuelve tus dudas o cuéntanos sobre un proyecto. Estamos listos para atenderte.</p><div class="contact-list"><a href="tel:+526864280637">☎ <span><b>+52 (686) 428 06 37</b><small>Teléfono</small></span></a><a href="https://wa.me/526864280637" target="_blank">◉ <span><b>WhatsApp</b><small>Pedidos y atención</small></span></a><a href="mailto:contacto@elmolino.mx">✉ <span><b>contacto@elmolino.mx</b><small>Correo electrónico</small></span></a><div>⌖ <span><b>Mexicali, Baja California</b><small>Cobertura local y envíos</small></span></div></div></div><form id="contactForm"><div class="form-row"><input name="name" placeholder="Nombre completo*" required><input name="email" type="email" placeholder="Correo electrónico*" required></div><input name="phone" type="tel" placeholder="Teléfono"><textarea name="message" placeholder="Mensaje*" required></textarea><button class="btn btn--red" type="submit">Enviar mensaje →</button><small>El botón prepara el mensaje para enviarlo por WhatsApp.</small></form><div></div></div><div class="subfooter"><div class="container subfooter__inner"><a class="logo-box small" href="#inicio"><img src="assets/logo.png" alt="El Molino"></a><nav><a href="#productos">Productos</a><a href="#historia">Historia</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav><div class="social">◎ ◉</div></div><div class="copyright">© 2026 El Molino. Todos los derechos reservados. Hecho en Mexicali, B.C.</div></div></footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
