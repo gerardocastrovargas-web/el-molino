@@ -29,10 +29,7 @@ export default function ContactFooter() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#111008_0%,rgba(17,16,8,0.7)_30%,rgba(17,16,8,0.2)_60%,transparent_100%)]" />
       </div>
 
-      {/* Quote on top of the image */}
-      <p className="font-display absolute right-[4%] top-1/2 hidden -translate-y-1/2 -rotate-3 text-[1.5rem] italic leading-snug text-white/90 drop-shadow-lg lg:block z-10">
-        "Buenos<br />embutidos,<br />mejores<br />momentos"
-      </p>
+
 
       {/* ── 3-col content grid — no borders, no dividers ── */}
       <div className="relative z-10 mx-auto grid max-w-[1320px] min-h-[480px] gap-0 px-6 py-14 lg:grid-cols-[1fr_1.2fr_0.8fr] lg:px-10 lg:py-16">
