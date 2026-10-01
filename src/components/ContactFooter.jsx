@@ -64,10 +64,10 @@ export default function ContactFooter() {
             {/* Social icons */}
             <div className="flex items-center gap-3 pt-1">
               <span className="text-xs font-semibold uppercase tracking-widest text-white/40">Síguenos</span>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/elmolinomxl/" target="_blank" rel="noreferrer" className="social-link" aria-label="Instagram">
                 <Instagram size={16} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/elmolinomxl" target="_blank" rel="noreferrer" className="social-link" aria-label="Facebook">
                 <Facebook size={16} />
               </a>
             </div>
