@@ -18,7 +18,7 @@ export default function Hero() {
           src="/assets/hero.jpg"
           alt=""
           aria-hidden="true"
-          className="h-full w-full object-cover object-[60%_50%]"
+          className="h-full w-full object-cover object-[75%_50%]"
         />
       </div>
 
