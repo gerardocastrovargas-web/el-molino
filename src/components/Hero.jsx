@@ -18,7 +18,7 @@ export default function Hero() {
           src="/assets/hero.jpg"
           alt=""
           aria-hidden="true"
-          className="h-full w-full object-cover object-right"
+          className="h-full w-full object-cover" style={{ objectPosition: '65% center' }}
         />
       </div>
 
@@ -30,12 +30,12 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 -z-10 h-32 bg-gradient-to-t from-black/70 to-transparent" />
 
       {/* ── Main content — two-column grid, centred on screen ── */}
-      <div className="mx-auto flex w-full flex-1 max-w-[1400px] items-center px-8 py-8 lg:px-16 xl:px-20">
+      <div className="mx-auto flex w-full flex-1 max-w-[1200px] items-center px-6 py-8 lg:px-12 xl:px-16">
         {/*
           Grid: text column (left ~46%) | empty spacer (right ~54% — occupied by photo)
           On smaller screens collapses to single column.
         */}
-        <div className="grid w-full grid-cols-1 gap-0 lg:grid-cols-[46fr_54fr]">
+        <div className="grid w-full grid-cols-1 gap-0 lg:grid-cols-[44fr_56fr]">
 
           {/* LEFT: text content */}
           <motion.div
@@ -94,7 +94,7 @@ export default function Hero() {
 
       {/* ── Trust badges bar ── */}
       <div className="border-t border-white/10 bg-black/55 backdrop-blur-sm">
-        <div className="mx-auto grid max-w-[1400px] grid-cols-2 divide-x divide-white/10 px-8 sm:grid-cols-4 lg:px-16 xl:px-20">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-2 divide-x divide-white/10 px-6 sm:grid-cols-4 lg:px-12 xl:px-16">
           {features.map(({ icon: Icon, title, text }, index) => (
             <motion.div
               key={title}
