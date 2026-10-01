@@ -12,7 +12,7 @@ export default function Story() {
   return (
     <section id="historia" className="overflow-hidden bg-coal text-white">
       {/* 3-column grid: 1/3 image | 1/3 text | 1/3 badges */}
-      <div className="grid min-h-[480px] lg:grid-cols-[1fr_1fr_1fr]">
+      <div className="grid min-h-[480px] lg:grid-cols-[1fr_1.4fr_0.6fr]">
 
         {/* ── Col 1: Chef image ── */}
         <motion.div
@@ -25,7 +25,7 @@ export default function Story() {
           <img
             src="/assets/story-chef.jpg"
             alt="Artesano de El Molino elaborando embutidos"
-            className="absolute inset-0 h-full w-full object-cover object-top"
+            className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
           />
           {/* fade right into text column */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0)_50%,rgba(20,14,8,0.85)_100%)]" />
