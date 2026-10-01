@@ -10,34 +10,49 @@ const features = [
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative isolate flex h-[100dvh] min-h-[600px] flex-col overflow-hidden bg-black pt-[76px]">
+    <section
+      id="inicio"
+      className="relative isolate flex h-[100dvh] min-h-[600px] flex-col overflow-hidden pt-[76px]"
+    >
+      {/* ── Layer 1: solid dark background (always covers full section) ── */}
+      <div className="absolute inset-0 -z-30 bg-[#0a0202]" />
 
-      {/* Background image — anchored right so food stays visible on the right half */}
-      <div className="absolute inset-0 -z-20">
+      {/* ── Layer 2: food photo anchored to the RIGHT 58% only ── */}
+      {/*  This guarantees the image NEVER bleeds into the text area      */}
+      <div className="absolute inset-y-0 right-0 -z-20 w-[58%]">
         <img
           src="/assets/hero.jpg"
           alt=""
           aria-hidden="true"
-          className="h-full w-full object-cover" style={{ objectPosition: '65% center' }}
+          className="h-full w-full object-cover"
+          style={{ objectPosition: 'center center' }}
         />
       </div>
 
-      {/* Left-to-right gradient: very dark left half fading to transparent on right */}
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(0,0,0,.97)_0%,rgba(0,0,0,.92)_28%,rgba(0,0,0,.70)_45%,rgba(0,0,0,.30)_62%,rgba(0,0,0,.08)_80%,rgba(0,0,0,.02)_100%)]" />
-      {/* Subtle red glow bottom-left */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_8%_85%,rgba(193,18,31,.25),transparent_42%)]" />
-      {/* Bottom fade into badges */}
-      <div className="absolute bottom-0 left-0 right-0 -z-10 h-32 bg-gradient-to-t from-black/70 to-transparent" />
+      {/* ── Layer 3: horizontal blend — dark left → transparent right ── */}
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            'linear-gradient(to right, #0a0202 0%, #0a0202 38%, rgba(10,2,2,0.88) 48%, rgba(10,2,2,0.50) 58%, rgba(10,2,2,0.10) 72%, transparent 84%)',
+        }}
+      />
 
-      {/* ── Main content — two-column grid, centred on screen ── */}
-      <div className="mx-auto flex w-full flex-1 max-w-[1200px] items-center px-6 py-8 lg:px-12 xl:px-16">
-        {/*
-          Grid: text column (left ~46%) | empty spacer (right ~54% — occupied by photo)
-          On smaller screens collapses to single column.
-        */}
-        <div className="grid w-full grid-cols-1 gap-0 lg:grid-cols-[44fr_56fr]">
+      {/* ── Layer 4: red glow bottom-left ── */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_6%_88%,rgba(193,18,31,.30),transparent_40%)]" />
 
-          {/* LEFT: text content */}
+      {/* ── Layer 5: bottom fade into badges ── */}
+      <div className="absolute bottom-0 left-0 right-0 -z-10 h-32 bg-gradient-to-t from-black/75 to-transparent" />
+
+      {/* ══════════════════════════════════════════════════════════════
+          Main content — two-column grid centred on screen
+          Left col  → text (always on dark bg)
+          Right col → empty spacer (photo fills it via absolute img)
+      ══════════════════════════════════════════════════════════════ */}
+      <div className="mx-auto flex w-full flex-1 max-w-[1280px] items-center px-8 py-8 lg:px-14 xl:px-20">
+        <div className="grid w-full grid-cols-1 lg:grid-cols-[46fr_54fr]">
+
+          {/* ── LEFT: text ── */}
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,15 +69,15 @@ export default function Hero() {
               Embutidos artesanales · Mexicali, B.C.
             </motion.span>
 
-            <h1 className="font-display mt-4 text-[clamp(2.2rem,3.8vw,4.4rem)] font-bold leading-[.97] tracking-[-.045em] text-white">
+            <h1 className="font-display mt-4 text-[clamp(2.2rem,3.6vw,4.2rem)] font-bold leading-[.97] tracking-[-.045em] text-white">
               Auténticos embutidos artesanales con tradición alemana
             </h1>
 
             <div className="mt-4 h-[3px] w-12 bg-brand-500 rounded-full" />
 
-            <p className="mt-5 max-w-[480px] text-[clamp(.88rem,1.05vw,1.05rem)] leading-[1.78] text-white/80">
-              Desde 2012, en Mexicali, elaboramos embutidos gourmet con carne 100% real,
-              ingredientes de calidad y recetas tradicionales.
+            <p className="mt-5 max-w-[460px] text-[clamp(.88rem,1.05vw,1.05rem)] leading-[1.78] text-white/80">
+              Desde 2012, en Mexicali, elaboramos embutidos gourmet con carne 100%
+              real, ingredientes de calidad y recetas tradicionales.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
@@ -87,14 +102,14 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* RIGHT: intentionally empty — the background photo fills this half */}
+          {/* ── RIGHT: spacer — photo fills this area via absolute element ── */}
           <div aria-hidden="true" />
         </div>
       </div>
 
       {/* ── Trust badges bar ── */}
       <div className="border-t border-white/10 bg-black/55 backdrop-blur-sm">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-2 divide-x divide-white/10 px-6 sm:grid-cols-4 lg:px-12 xl:px-16">
+        <div className="mx-auto grid max-w-[1280px] grid-cols-2 divide-x divide-white/10 px-8 sm:grid-cols-4 lg:px-14 xl:px-20">
           {features.map(({ icon: Icon, title, text }, index) => (
             <motion.div
               key={title}
@@ -115,4 +130,3 @@ export default function Hero() {
     </section>
   )
 }
-
